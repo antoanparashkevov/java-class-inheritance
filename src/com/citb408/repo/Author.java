@@ -3,7 +3,7 @@ package com.citb408.repo;
 public class Author {
     private String name;
 
-    Author(String name) {
+    public Author(String name) {//the constructor should be publicly accessible
         this.name = name;
     }
 
