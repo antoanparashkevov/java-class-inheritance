@@ -5,6 +5,7 @@ import com.citb408.repo.*;
 public class Main {
     public static void main(String[] args) {
         Document document = new Document("Document 1", 20.5, ".pdf");
+        Document document2 = new Document("Document 2", 10, ".pdf");
 
         Author author = new Author("Ivan Vazov");
 
@@ -21,5 +22,10 @@ public class Main {
         Newspaper newspaper = new Newspaper("24 chasa", 24.3, ".txt", 125);
 
         System.out.println(newspaper);
+
+        Repo repo = new Repo(10);
+
+        repo.uploadDocument(document);
+        repo.uploadDocument(document2);
     }
 }
