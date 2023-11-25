@@ -1,9 +1,6 @@
 package com.citb408;
 
-import com.citb408.repo.Author;
-import com.citb408.repo.Book;
-import com.citb408.repo.Document;
-import com.citb408.repo.Novel;
+import com.citb408.repo.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +17,9 @@ public class Main {
         Novel novel = new Novel("Novel 1", 5.2, ".pdf", author, "WE678", "abstract");
 
         System.out.println(novel);
+
+        Newspaper newspaper = new Newspaper("24 chasa", 24.3, ".txt", 125);
+
+        System.out.println(newspaper);
     }
 }
