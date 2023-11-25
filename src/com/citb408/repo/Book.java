@@ -4,11 +4,12 @@ public class Book extends Document {
     private Author author;//make an association between both classes, not inheritance
     private String isbn;
 
+    public Book(){}
+
     public Book(String name, double size, String fileFormat, Author author, String isbn) {
         super(name, size, fileFormat);//this statement should be at the first place
         this.author = author;
         this.isbn = isbn;
-
     }
 
     public Author getAuthor() {
