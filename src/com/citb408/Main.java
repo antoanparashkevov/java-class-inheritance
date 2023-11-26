@@ -25,6 +25,7 @@ public class Main {
 
         Repo repo = new Repo(10);
 
+
         repo.uploadDocument(document);
         repo.uploadDocument(document2);
     }
